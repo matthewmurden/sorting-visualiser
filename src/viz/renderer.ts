@@ -3,8 +3,10 @@ import type { VizState } from "./types";
 export class CanvasRenderer {
   private ctx: CanvasRenderingContext2D;
   private dpr = window.devicePixelRatio || 1;
+  private canvas: HTMLCanvasElement;
 
-  constructor(private canvas: HTMLCanvasElement) {
+  constructor(canvas: HTMLCanvasElement) {
+    this.canvas = canvas;
     const ctx = canvas.getContext("2d");
     if (!ctx) throw new Error("Canvas 2D not supported");
     this.ctx = ctx;
