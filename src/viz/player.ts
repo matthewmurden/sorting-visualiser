@@ -8,7 +8,6 @@ export class Player {
   private speedMs = 40; // lower = faster
   private rafId = 0;
 
-  private canvas: HTMLCanvasElement;
   private state: VizState;
   private onDone: () => void;
 
@@ -19,7 +18,6 @@ export class Player {
   };
 
   constructor(canvas: HTMLCanvasElement, state: VizState, onDone: () => void) {
-    this.canvas = canvas;
     this.state = state;
     this.onDone = onDone;
 
