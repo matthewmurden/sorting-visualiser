@@ -7,9 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "tailwindcss init -p"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -31,9 +29,6 @@
     "typescript-eslint": "^8.39.1",
     "vite": "^5.0.0"
   },
-  "description": "Sorting visualizer project",
-  "main": "eslint.config.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "description": "Interactive sorting algorithm visualiser built with React, TypeScript and Canvas",
+  "author": "Matthew Murden"
 }
